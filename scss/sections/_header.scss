@@ -1,2 +1,24 @@
+.header {
+    background-color: $backgroundMain;
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20.5px 0;
+    }
+}
 
+.header-list {
+    display: flex;
+    gap: 64px;
+}
+
+.link-text {
+    color: $fontColor;
+    text-decoration: none;
+
+    &:hover {
+        color: $contextColor;
+    }
+}

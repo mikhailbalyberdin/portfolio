@@ -1,5 +1,6 @@
 // base
-@import "./basic/variables.scss";
-
+@import "./basic/normalize";
+@import "./basic/variables";
+@import "./basic/base";
 // sections
 @import "./sections/header";
