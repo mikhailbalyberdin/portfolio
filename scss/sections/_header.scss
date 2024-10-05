@@ -1,8 +1,10 @@
 .header {
     &__content {
+        max-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
         padding: 20.5px 0;
     }
 }
@@ -16,6 +18,9 @@
     color: $fontColor;
     text-decoration: none;
     font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
 
     @include hover-link($contextColor);
 }
