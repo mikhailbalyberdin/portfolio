@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,6 +309,11 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: #1b1a17;
+}
+
 .container {
   max-width: 1440px;
   background-color: #1b1a17;
@@ -329,9 +335,6 @@ ul, ol, li {
   height: 100%;
 }
 
-.header {
-  background-color: #1b1a17;
-}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -344,10 +347,11 @@ ul, ol, li {
   gap: 64px;
 }
 
-.link-text {
+.anchor-link {
   color: #f0e3ca;
   text-decoration: none;
+  font-family: inherit;
 }
-.link-text:hover {
+.anchor-link:hover {
   color: #ff8303;
 }/*# sourceMappingURL=main.css.map */

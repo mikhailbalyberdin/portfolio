@@ -1,6 +1,4 @@
 .header {
-    background-color: $backgroundMain;
-
     &__content {
         display: flex;
         justify-content: space-between;
@@ -14,11 +12,13 @@
     gap: 64px;
 }
 
-.link-text {
+.anchor-link {
     color: $fontColor;
     text-decoration: none;
+    font-family: inherit;
 
-    &:hover {
-        color: $contextColor;
-    }
+    @include hover-link($contextColor);
 }
+
+
+
