@@ -6,6 +6,12 @@
         align-items: center;
         margin: 0 auto;
         padding: 20.5px 0;
+
+        @media(max-width: 704px) {
+            flex-direction: column;
+            gap: 16px;
+            padding: 16px 0;
+        }
     }       
 }
 

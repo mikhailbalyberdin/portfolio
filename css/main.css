@@ -343,6 +343,13 @@ ul, ol, li {
   margin: 0 auto;
   padding: 20.5px 0;
 }
+@media (max-width: 704px) {
+  .header__content {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+}
 
 .header-list {
   display: flex;
