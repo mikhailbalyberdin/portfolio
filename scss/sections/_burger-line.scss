@@ -1,0 +1,46 @@
+@media(max-width: 600px) {
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: none;
+        background: none;
+    }
+
+    .burger__line {
+        display: inline-block;
+        width: 36px;
+        height: 4px;
+        position:relative;
+        background-color: $fontColor;
+    }
+    
+    .burger__line::before, 
+    .burger__line::after {
+        content: "";
+        display: inline-block;
+        width: 36px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background-color: $fontColor;
+    }
+    
+    .burger__line::before {
+        top: -10px;
+    }
+    
+    .burger__line::after {
+        bottom: -10px;
+    }
+}
+
+@media(min-width: 601px) {
+    .burger {
+        display: none;
+    }
+}
+
+
