@@ -1,6 +1,7 @@
 const headerElement = document.querySelector('#header');
 
 const openClass = 'open';
+const activeClass = 'active';
 
 const eventHandler = (e) => {
     const isBurgerButton = e.target.closest('#button-burger');
@@ -9,10 +10,12 @@ const eventHandler = (e) => {
 
     if (isBurgerButton) {
         mobileMenuElement.classList.toggle(openClass);
+        isBurgerButton.classList.toggle(activeClass);
     } 
 
     if (isLink) {
-        console.log("Hello");
+        const burgerButton = headerElement.querySelector('#button-burger');
+        burgerButton.classList.remove(activeClass);
         mobileMenuElement.classList.remove(openClass);
     }
 }

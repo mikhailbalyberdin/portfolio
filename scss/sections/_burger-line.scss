@@ -15,6 +15,7 @@
         height: 4px;
         position:relative;
         background-color: $fontColor;
+        transition: background-color 0.8s 0s;
     }
     
     .burger__line::before, 
@@ -30,10 +31,33 @@
     
     .burger__line::before {
         top: -10px;
+        transition: transform 0.4s, top 0.4s 0.4s;
     }
     
     .burger__line::after {
         bottom: -10px;
+        transition: transform 0.4s, bottom 0.4s 0.4s;
+    }
+
+    .burger.active {
+        .burger__line::before {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 0.4s, transform 0.4s 0.4s;
+        }
+        
+        .burger__line::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 0.4s, transform 0.4s 0.4s;
+        }
+
+        .burger__line {
+            background-color: transparent;
+            transition: background-color 0.4s 0s;
+        }
+        
+        
     }
 }
 
