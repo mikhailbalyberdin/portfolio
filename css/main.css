@@ -309,6 +309,21 @@ template {
   display: none;
 }
 
+*, * > * {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Inconsolata", monospace;
   background-color: #1b1a17;
@@ -409,6 +424,10 @@ ul, ol, li {
   color: #ff8303;
 }
 
+.welcome {
+  padding: 146px 0 72.5px;
+}
+
 @media (max-width: 600px) {
   .burger {
     display: flex;
@@ -464,4 +483,27 @@ ul, ol, li {
   .burger {
     display: none;
   }
+}
+.hero {
+  max-width: 448px;
+}
+
+.hero__title {
+  font-size: 64px;
+  font-weight: 900;
+  color: #ff8303;
+  margin-bottom: 13px;
+}
+
+.hero__subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f0e3ca;
+  margin-bottom: 14px;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f0e3ca;
 }/*# sourceMappingURL=main.css.map */
