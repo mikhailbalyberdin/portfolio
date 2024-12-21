@@ -428,6 +428,14 @@ ul, ol, li {
   padding: 146px 0 72.5px;
 }
 
+.welcome__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
 @media (max-width: 600px) {
   .burger {
     display: flex;
@@ -506,4 +514,11 @@ ul, ol, li {
   font-size: 20px;
   font-weight: 400;
   color: #f0e3ca;
+}
+
+.avatar {
+  background-image: url(../../img/avatar-desktop.png);
+  width: 629px;
+  height: 575px;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */
