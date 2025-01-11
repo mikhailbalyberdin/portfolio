@@ -356,6 +356,7 @@ ul, ol, li {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 3;
 }
 .header.link {
   background-color: green;
@@ -433,6 +434,44 @@ ul, ol, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.about-me__content {
+  max-width: 1037px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 64px 0;
+}
+
+.mini-logo {
+  width: 101px;
+  height: 101px;
+  position: relative;
+}
+
+.mini-logo__image {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+.mini-logo__image--bottom-image {
+  background-color: rgba(240, 227, 202, 0.76);
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.mini-logo__image--top-image {
+  background-color: rgba(255, 131, 3, 0.82);
+  transform: translate(-50%, -50%) rotate(-51.88deg);
+}
+
+.description {
+  font-size: 24px;
+  max-width: 904px;
+  color: #f0e3ca;
 }
 
 @media (max-width: 600px) {
