@@ -19,10 +19,12 @@
     &--bottom {
         background-color: rgba(240, 227, 202, 0.72);
         transform: translate(-50%, -50%) rotate(-24deg);
+        animation: rotate 10s linear infinite;
     }
     &--mid {
         background-color:  rgba(255, 130, 5, 0.72);
         transform: translate(-50%, -50%) rotate(30deg); 
+        animation: rotate 7s ease-in-out infinite
     }
     &--top {
         background-image: url(../../img/avatar.webp);
