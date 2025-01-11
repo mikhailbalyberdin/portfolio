@@ -465,10 +465,12 @@ ul, ol, li {
 .mini-logo__image--bottom-image {
   background-color: rgba(240, 227, 202, 0.76);
   transform: translate(-50%, -50%) rotate(0deg);
+  animation: rotate 5s linear infinite;
 }
 .mini-logo__image--top-image {
   background-color: rgba(255, 131, 3, 0.82);
   transform: translate(-50%, -50%) rotate(-51.88deg);
+  animation: rotate 3s ease-in-out infinite;
 }
 
 .description {
@@ -477,6 +479,14 @@ ul, ol, li {
   color: #f0e3ca;
 }
 
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 @media (max-width: 600px) {
   .burger {
     display: flex;

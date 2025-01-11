@@ -24,11 +24,13 @@
     &--bottom-image {
         background-color: rgba(240, 227, 202, 0.76);
         transform: translate(-50%, -50%) rotate(0deg);
+        animation: rotate 5s linear infinite;
     }
 
     &--top-image {
         background-color: rgb(255, 131, 3, 0.82);
         transform: translate(-50%, -50%) rotate(-51.88deg);
+        animation: rotate 3s ease-in-out infinite;
     }
 
 }
@@ -39,3 +41,13 @@
     color: $fontColor;
 }
 
+
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+} 
