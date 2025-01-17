@@ -1,0 +1,72 @@
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+
+.skills-content__title {
+    text-align: center;
+    color: $contextColor;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+
+.cards-item {
+
+}
+
+
+.cards-item__card {
+    width: 200px;
+    height: 300px;
+    background-color: $cardColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+
+.icon {
+    
+}
+
+.card-text {
+    color: $fontColor;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.cards-item__card--html {
+
+}
+
+
+.cards-item__card--css {
+
+}
+
+
+.cards-item__card--scss {
+
+}
+
+
+.cards-item__card--git {
+    
+}
+
+
+
+
+
+

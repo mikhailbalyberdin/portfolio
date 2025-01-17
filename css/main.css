@@ -487,6 +487,41 @@ ul, ol, li {
   color: #f0e3ca;
 }
 
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.skills-content__title {
+  text-align: center;
+  color: #ff8303;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.cards-item__card {
+  width: 200px;
+  height: 300px;
+  background-color: #1f1e1b;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+}
+
+.card-text {
+  color: #f0e3ca;
+  text-align: center;
+  font-size: 32px;
+}
+
 @media (max-width: 600px) {
   .burger {
     display: flex;
@@ -569,7 +604,8 @@ ul, ol, li {
 
 .avatar {
   background-image: url(../../img/avatar-desktop.png);
-  width: 629px;
+  max-width: 629px;
+  width: 100%;
   height: 575px;
   background-repeat: no-repeat;
   position: relative;

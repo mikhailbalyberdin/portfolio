@@ -1,6 +1,7 @@
 .avatar {
     background-image: url(../../img/avatar-desktop.png);
-    width: 629px;
+    max-width: 629px;
+    width: 100%;
     height: 575px;
     background-repeat: no-repeat;
     position: relative;
