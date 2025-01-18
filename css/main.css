@@ -351,6 +351,16 @@ ul, ol, li {
   height: 100%;
 }
 
+.context-title {
+  color: #FF8303;
+  font-family: Inconsolata;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -491,11 +501,7 @@ ul, ol, li {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-}
-
-.skills-content__title {
-  text-align: center;
-  color: #ff8303;
+  padding: 64px 0;
 }
 
 .cards {
@@ -505,18 +511,56 @@ ul, ol, li {
        column-gap: 16px;
 }
 
-.cards-item__card {
+.card-skills {
   width: 200px;
   height: 300px;
   background-color: #1f1e1b;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   row-gap: 16px;
 }
 
-.card-text {
+.card-skills__icon {
+  fill: #F0E3CA;
+  transition: 0.4s;
+}
+.card-skills__icon--html, .card-skills__icon--css {
+  width: 114px;
+  height: 129px;
+}
+.card-skills__icon--javascript, .card-skills__icon--scss, .card-skills__icon--git {
+  width: 128px;
+  height: 128px;
+}
+
+.card-skills:hover {
+  cursor: pointer;
+}
+.card-skills:hover .card-skills__icon--html {
+  fill: #FC490B;
+  filter: drop-shadow(0 0 3px #FC490B);
+}
+.card-skills:hover .card-skills__icon--css {
+  fill: #2196F4;
+  filter: drop-shadow(0 0 3px #2196F4);
+}
+.card-skills:hover .card-skills__icon--git {
+  fill: #F25234;
+  filter: drop-shadow(0 0 3px #F25234);
+}
+.card-skills:hover .card-skills__icon--javascript {
+  fill: #FDDF00;
+  filter: drop-shadow(0 0 3px #FDDF00);
+}
+.card-skills:hover .card-skills__icon--scss {
+  fill: #CA669B;
+  filter: drop-shadow(0 0 3px #CA669B);
+}
+
+.card-skills__text {
   color: #f0e3ca;
   text-align: center;
   font-size: 32px;
