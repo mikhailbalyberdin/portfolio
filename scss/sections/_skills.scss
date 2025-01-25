@@ -9,7 +9,8 @@
 .cards {
     display: flex;
     justify-content: center;
-    column-gap: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 
@@ -26,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 16px;
+    gap: 16px;
 }
 
 
@@ -55,44 +56,70 @@
     transition: 0.4s;
 }
 
-.card-skills:hover {
-    cursor: pointer;
-    .card-skills__icon--html {
-        fill: #FC490B;
-        filter: drop-shadow(0 0 3px #FC490B);
+@media(hover:hover) {
+    .card-skills:hover {
+        cursor: pointer;
+        .card-skills__icon--html {
+            fill: #FC490B;
+            filter: drop-shadow(0 0 3px #FC490B);
+        }
+        .card-skills__icon--css {
+            fill: #2196F4;
+            filter: drop-shadow(0 0 3px #2196F4);
+        }
+        .card-skills__icon--git {
+            fill: #F25234;
+            filter: drop-shadow(0 0 3px #F25234);
+        }
+        .card-skills__icon--javascript {
+            fill: #FDDF00;
+            filter: drop-shadow(0 0 3px #FDDF00);
+        }
+        .card-skills__icon--scss {
+            fill: #CA669B;
+            filter: drop-shadow(0 0 3px #CA669B);
+        }
+        .card-skills__text--html {
+            color: #FC490B;
+        }
+        .card-skills__text--css {
+            color: #2196F4;
+        }
+        .card-skills__text--git {
+            color: #F25234;
+        }
+        .card-skills__text--javascript {
+            color: #FDDF00;
+        }
+        .card-skills__text--scss {
+            color: #CA669B;
+        }
     }
-    .card-skills__icon--css {
-        fill: #2196F4;
-        filter: drop-shadow(0 0 3px #2196F4);
-    }
-    .card-skills__icon--git {
-        fill: #F25234;
-        filter: drop-shadow(0 0 3px #F25234);
-    }
-    .card-skills__icon--javascript {
-        fill: #FDDF00;
-        filter: drop-shadow(0 0 3px #FDDF00);
-    }
-    .card-skills__icon--scss {
-        fill: #CA669B;
-        filter: drop-shadow(0 0 3px #CA669B);
-    }
-    .card-skills__text--html {
-        color: #FC490B;
-    }
-    .card-skills__text--css {
-        color: #2196F4;
-    }
-    .card-skills__text--git {
-        color: #F25234;
-    }
-    .card-skills__text--javascript {
-        color: #FDDF00;
-    }
-    .card-skills__text--scss {
-        color: #CA669B;
-    }
+
 }
 
 
+@media(max-width: 450px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-skills {
+        flex-direction: row;
+        width: 285px;
+        height: 60px;
+        justify-content: flex-start;
+    }
+    .card-skills__icon--html,
+    .card-skills__icon--css {
+        width: 28px;
+        height: 32px;
+    }
+    .card-skills__icon--git,
+    .card-skills__icon--javascript,
+    .card-skills__icon--scss {
+        width: 32px;
+        height: 32px;
+    }
+}
 
