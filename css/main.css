@@ -684,11 +684,13 @@ ul, ol, li {
   background-color: rgba(240, 227, 202, 0.72);
   transform: translate(-50%, -50%) rotate(-24deg);
   animation: rotate 10s linear infinite;
+  filter: blur(10px);
 }
 .avatar__image--mid {
   background-color: rgba(255, 130, 5, 0.72);
   transform: translate(-50%, -50%) rotate(30deg);
   animation: rotate 7s ease-in-out infinite;
+  filter: blur(10px);
 }
 .avatar__image--top {
   background-image: url(../../img/avatar.webp);
