@@ -3,7 +3,7 @@
     width: 629px;
     height: 575px;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative; 
 }
 
 
@@ -20,11 +20,13 @@
         background-color: rgba(240, 227, 202, 0.72);
         transform: translate(-50%, -50%) rotate(-24deg);
         animation: rotate 10s linear infinite;
+        filter: blur(10px);
     }
     &--mid {
         background-color:  rgba(255, 130, 5, 0.72);
         transform: translate(-50%, -50%) rotate(30deg); 
-        animation: rotate 7s ease-in-out infinite
+        animation: rotate 7s ease-in-out infinite;
+        filter: blur(10px);
     }
     &--top {
         background-image: url(../../img/avatar.webp);
