@@ -11,6 +11,7 @@
     width: 101px;
     height: 101px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .mini-logo__image {
@@ -41,3 +42,10 @@
     max-width: 904px;
     color: $fontColor;
 }
+
+@media(max-width: 768px) {
+    .about-me__content {
+        flex-direction: column;
+    }
+}
+
