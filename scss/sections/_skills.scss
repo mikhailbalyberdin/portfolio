@@ -48,6 +48,13 @@
     }
 }
 
+.card-skills__text {
+    color: $fontColor;
+    text-align: center;
+    font-size: 32px;
+    transition: 0.4s;
+}
+
 .card-skills:hover {
     cursor: pointer;
     .card-skills__icon--html {
@@ -70,11 +77,22 @@
         fill: #CA669B;
         filter: drop-shadow(0 0 3px #CA669B);
     }
+    .card-skills__text--html {
+        color: #FC490B;
+    }
+    .card-skills__text--css {
+        color: #2196F4;
+    }
+    .card-skills__text--git {
+        color: #F25234;
+    }
+    .card-skills__text--javascript {
+        color: #FDDF00;
+    }
+    .card-skills__text--scss {
+        color: #CA669B;
+    }
 }
 
-.card-skills__text {
-    color: $fontColor;
-    text-align: center;
-    font-size: 32px;
-}
+
 
