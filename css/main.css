@@ -332,6 +332,7 @@ body {
 
 .container {
   max-width: 1245px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -390,7 +391,7 @@ ul, ol, li {
   margin: 0 auto;
   padding: 20.5px 0;
 }
-@media (max-width: 704px) {
+@media (max-width: 768px) {
   .header__content {
     flex-direction: column;
     gap: 16px;
@@ -457,6 +458,12 @@ ul, ol, li {
   align-items: center;
 }
 
+@media (max-width: 1050px) {
+  .welcome__content {
+    flex-direction: column;
+    row-gap: 64px;
+  }
+}
 .about-me__content {
   max-width: 1037px;
   margin: 0 auto;
@@ -692,10 +699,21 @@ ul, ol, li {
   color: #f0e3ca;
 }
 
+@media (max-width: 500px) {
+  .hero__title {
+    font-size: 40px;
+  }
+  .hero__subtitle {
+    font-size: 32px;
+  }
+  .hero__description {
+    font-size: 24px;
+  }
+}
 .avatar {
   background-image: url(../../img/avatar-desktop.png);
-  max-width: 629px;
-  width: 100%;
+  background-size: contain;
+  width: 629px;
   height: 575px;
   background-repeat: no-repeat;
   position: relative;
@@ -727,4 +745,51 @@ ul, ol, li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .avatar {
+    width: 529px;
+    height: 475px;
+  }
+  .avatar__image {
+    width: 278px;
+    height: 276px;
+  }
+}
+@media (max-width: 1050px) {
+  .avatar {
+    width: 629px;
+    height: 575px;
+  }
+  .avatar__image {
+    width: 374px;
+    height: 374px;
+  }
+}
+@media (max-width: 700px) {
+  .avatar {
+    width: 529px;
+    height: 475px;
+  }
+  .avatar__image {
+    width: 278px;
+    height: 276px;
+  }
+}
+@media (max-width: 700px) {
+  .avatar {
+    width: 429px;
+    height: 375px;
+  }
+}
+@media (max-width: 480px) {
+  .avatar {
+    width: 340px;
+    height: 275px;
+  }
+  .avatar__image {
+    width: 180px;
+    height: 180px;
+  }
 }/*# sourceMappingURL=main.css.map */
