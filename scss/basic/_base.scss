@@ -19,7 +19,9 @@ h6 {
 body {
     font-family: "Inconsolata", monospace;
     background-color: $backgroundMain;
-    
+    &.block {
+        overflow: hidden;
+    }
 }
 
 .container {
