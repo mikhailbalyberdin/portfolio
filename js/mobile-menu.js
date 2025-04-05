@@ -21,20 +21,3 @@ const eventHandler = (e) => {
 }
 
 headerElement.addEventListener('click', eventHandler);
-
-
-const skills=document.querySelector('#skills');
-const fade=document.querySelector('#fade');
-
-
-function cardRotate(event) {
-    const card = event.target.closest('[data-card]');
-    if (card) {
-        fade.classList.add('active');
-        card.classList.add('active');
-        document.body.classList.add('block');
-    }
-}
-
-skills.addEventListener('click', (event) => cardRotate(event));
-

@@ -73,8 +73,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -375,8 +374,7 @@ ul, ol, li {
 }
 .header {
   background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -528,6 +526,21 @@ ul, ol, li {
   position: relative;
 }
 
+.cross-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+}
+
 .cards__item {
   width: 200px;
   height: 300px;
@@ -550,7 +563,9 @@ ul, ol, li {
 .card-skills__back {
   position: absolute;
   color: rgb(255, 255, 255);
-  background-color: rgb(34, 85, 179);
+  background-color: rgba(31, 30, 27, 0.9176470588);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
   transform: perspective(600px) rotateY(180deg);
 }
 .card-skills__front, .card-skills__back {
@@ -591,8 +606,7 @@ ul, ol, li {
   width: 100%;
   height: 100%;
   background-color: rgba(83, 4, 4, 0.61);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .card-skills__icon {
