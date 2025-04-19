@@ -10,7 +10,6 @@
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .cross-button {
@@ -26,6 +25,11 @@
     cursor: pointer;
     top: 15px;
     right: 15px;
+    transition: 0.7s;
+}
+
+.cross-button:hover {
+    transform: rotate(360deg);
 }
 
 .cards__item {
@@ -37,6 +41,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    transition: 0.1s 0;
     
     &__front {
         display: flex;
@@ -49,12 +54,12 @@
     }
 
     &__back {
-            position: absolute;
-            color: rgb(255, 255, 255);
-            background-color: #1f1e1bea;
-            backdrop-filter: blur(3px);
-            border-radius: 10px;
-            transform: perspective(600px) rotateY(180deg);
+        position: absolute;
+        color: rgb(255, 255, 255);
+        background-color: #1f1e1bea;
+        backdrop-filter: blur(3px);
+        border-radius: 10px;
+        transform: perspective(600px) rotateY(180deg);
     }
 
     &__front,
@@ -64,36 +69,48 @@
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform 1s;   
+        transition: 1s;   
     }
 
     &.active{
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) rotateY(0deg);
+        transform: translate(-50%, -50%);
         max-width: 500px;
         height: 400px;
         z-index: 5;
-
+        
         .card-skills__front {
             transform: perspective(600px) rotateY(-180deg);
         }
 
         .card-skills__back {
             transform: perspective(600px) rotateY(0deg);
-            position: relative;
+        }
+
+        .card-skills__icon {
+            visibility: hidden;
+            transition: visibility 0.3s 0;
+            
+        }
+
+        .card-text {
+            color: $fontColor;
         }
     }
 }
 
 .card-text {
     position: absolute;
+    width: 95%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     font-size: 24px;
+    color: transparent;
+    transition: color 0.1s;
 }
 
 .fade{
@@ -116,11 +133,11 @@
 .card-skills__icon {
     fill: #F0E3CA;
     transition: 0.4s;
-
     &--html,
     &--css {
         width: 114px;
-        height: 129px;
+        height: 
+        129px;
     }
     &--javascript,
     &--scss,
@@ -176,20 +193,27 @@
             color: #CA669B;
         }
     }
-
 }
 
+@media(max-width: 500px) {
+    .card-skills.active {
+        width: 90%;
+    }
+}
 
 @media(max-width: 450px) {
     .cards {
         flex-direction: column;
         align-items: center;
     }
-    .card-skills {
-        flex-direction: row;
+    .cards__item {
         width: 285px;
         height: 60px;
+    }
+    .card-skills__front {
+        flex-direction: row;
         justify-content: flex-start;
+        padding-left: 30px;
     }
     .card-skills__icon--html,
     .card-skills__icon--css {

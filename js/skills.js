@@ -13,6 +13,7 @@ function cardRotate(event) {
     if (crossButton) {
         fade.classList.remove('active');
         card.classList.remove('active');
+        document.body.classList.remove('block');
     }
 }
 
